@@ -11,43 +11,28 @@ public class Main {
 
         char[] array_3 = {'h', 'e', 'l', 'l', 'o', '!'};
 
-        for (int i = 0; i < array_1.length; i++) {
+        for (int i = array_1.length -1; i >= 0 ; i--) {
             System.out.print(array_1[i]);
-            if (i != array_1.length - 1) {
+            if (i != 0) {
                 System.out.print(", ");
             }
-
         }
         System.out.println();
 
-        for (int i = 0; i < array_2.length; i++) {
+        for (int i = array_2.length -1; i >= 0 ; i--) {
             System.out.print(array_2[i]);
-            if (i != array_2.length - 1) {
+            if (i != 0) {
                 System.out.print(", ");
             }
-
         }
         System.out.println();
 
-        for (int i = 0; i < array_3.length; i++) {
-            System.out.print(array_3[i]);
-            if (i != array_3.length - 1) {
-                System.out.print(", ");
+            for (int i = array_3.length -1; i >= 0 ; i--) {
+                System.out.print(array_3[i]);
+                if (i != 0) {
+                    System.out.print(", ");
+                }
             }
-
-        }
-        System.out.println();
-//-----------------------------------------
-        int[] array_4 = {1, 2, 3};
-        for (int i = 0; i <= array_4.length -1; i++) {
-            if (array_4[i] % 2 == 1) {
-                array_4[i] += 1;
-            }
-            System.out.println(array_4[i]);
-
-
-        }
-
     }
 
 }
